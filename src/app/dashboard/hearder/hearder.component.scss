@@ -1,0 +1,50 @@
+mat-toolbar{
+    border-bottom:1px gray solid;
+      background-color: rgb(253, 253, 253);
+}
+.logo{
+    height: 50px;
+}
+ .avatar{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;   
+}
+.usercontent{
+    margin-left:5px;
+    
+  
+    a{
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 14px;
+        
+    }      
+}
+.usercontent a{
+    color: orange;    
+}
+.input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;    
+    direction: rtl;
+    width: 400px;
+}
+.search-input{
+    border-radius: 30px;
+    border:1px solid;
+    width: 400px;
+    height: 20px;
+    padding: 3px;
+}
+.input_img {
+    position:absolute;
+    bottom:2px;
+    right:10px;
+    width:24px;
+    height:24px;
+}
+.icon-set{
+    margin-left: 350px;
+}

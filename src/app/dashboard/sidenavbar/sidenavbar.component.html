@@ -1,0 +1,318 @@
+<app-hearder></app-hearder>
+
+<mat-sidenav-container >
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" >
+        <mat-nav-list>
+            <a mat-list-item href="#"> 
+              <mat-icon>home</mat-icon>Home
+            </a>
+          </mat-nav-list>
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title >
+        <mat-icon>account_circle</mat-icon>Profile
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="#" > 
+          <mat-icon>manage_accounts</mat-icon>Edit
+        </a>
+        <a mat-list-item href="#" > 
+          <mat-icon>verified</mat-icon> Account
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion >
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>list</mat-icon>Listing
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="#" > 
+          <mat-icon>manage_accounts</mat-icon>Edit
+        </a>
+        <a mat-list-item href="#" > 
+          <mat-icon>verified</mat-icon> Account
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion >
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>settings</mat-icon>Manage Booking
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="#" > 
+          <mat-icon>manage_accounts</mat-icon>Edit
+        </a>
+        <a mat-list-item href="#" > 
+          <mat-icon>verified</mat-icon> Account
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion >
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>receipts</mat-icon>Invoice
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="#" > 
+          <mat-icon>manage_accounts</mat-icon>Edit
+        </a>
+        <a mat-list-item href="#" > 
+          <mat-icon>verified</mat-icon> Account
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion >
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>no_drinks</mat-icon>Logistics
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="#" > 
+          <mat-icon>manage_accounts</mat-icon>Edit
+        </a>
+        <a mat-list-item href="#" > 
+          <mat-icon>verified</mat-icon> Account
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+        </mat-accordion> 
+        <mat-nav-list>
+            <a mat-list-item href="#" > 
+              <mat-icon>reviews</mat-icon>Reviews
+            </a>
+            <a mat-list-item href="#" > 
+                <mat-icon>trending_up</mat-icon>Analytics
+              </a>
+            <a mat-list-item href="#" > 
+                <mat-icon>upcoming</mat-icon>Calender
+              </a>
+          </mat-nav-list>
+    </mat-sidenav>
+   
+    <mat-sidenav-content style="overflow-y:scroll; -webkit-scrollbar:2px;">
+        <div>
+        <button style="color: black;" (click)="sidenav.toggle()" *ngIf="!sidenav.opened" mat-icon-button><mat-icon>
+             arrow_right
+        </mat-icon></button>
+        <button  style="color: black;" (click)="sidenav.toggle()" *ngIf="sidenav.opened" mat-icon-button><mat-icon>
+            arrow_left
+        </mat-icon></button></div>           
+
+            <div class="row">
+              <div class="col-md">
+                <mat-card class="topcards toporg" ><mat-card-title style="font-size: small;">
+                  Accepted Orders
+                </mat-card-title>
+                  <mat-card-subtitle>30 <br> 350%</mat-card-subtitle>        
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="topcards topblack" ><mat-card-title style="font-size: small;">
+                  Cancelled Orders
+                </mat-card-title>
+                  <mat-card-subtitle>05 <br> -5.3%</mat-card-subtitle>        
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="topcards topred" ><mat-card-title style="font-size: small;">
+                  Lost Revenue
+                </mat-card-title>
+                  <mat-card-subtitle>161.22 <br> 350%</mat-card-subtitle>        
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="topcards topgreen" ><mat-card-title style="font-size: small;">
+                  Gross Revenue
+                </mat-card-title>
+                  <mat-card-subtitle>30 <br> 350.00%</mat-card-subtitle>        
+                  </mat-card>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px;margin-left: 10px; align-items: center;">
+              <div class="col-md">
+                <mat-card class="card-content"  ><mat-card-title >
+                 <mat-icon>date_range</mat-icon> New Bookings
+                  
+                </mat-card-title>
+                
+                <div class="row" style="color: black;">
+                  <div class="col-md">Guest Name:</div>
+                  <div class="col-md">Mr John doe</div>
+                </div>
+                
+                <div class="row" style="color: black; margin-top: 3px;">
+
+                  <div class="col-md">Menu:</div>
+                  <div class="col-md">Broast Chicken</div>
+                </div> 
+                  
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md">Date:</div>
+                  <div class="col-md">July 21, 2021</div>
+                </div> 
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md">Time:</div>
+                  <div class="col-md">4:30 Pm</div>
+                </div> 
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md btn-card"><button>View Booking</button></div>
+                  <div class="col-md btn-card"><button>Respond Booking</button></div>
+                </div> 
+                      
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="card-content" ><mat-card-title>
+                  <mat-icon>event</mat-icon>  Upcoming Bookings
+                </mat-card-title>
+                <div class="row" style="color: black;">
+                  <div class="col-md">Guest Name:</div>
+                  <div class="col-md">Mr Harry</div>
+                </div>
+                
+                <div class="row" style="color: black; margin-top: 3px;">
+
+                  <div class="col-md">Menu:</div>
+                  <div class="col-md">Pasta</div>
+                </div> 
+                  
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md">Date:</div>
+                  <div class="col-md">Aug 20, 2021</div>
+                </div> 
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md">Time:</div>
+                  <div class="col-md">5:30 Pm</div>
+                </div> 
+                <div class="row" style="color: black; margin-top: 3px;">
+                  <div class="col-md btn-card"><button>View Booking</button></div>
+                  <div class="col-md btn-card"><button>Respond Booking</button></div>
+                </div> 
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="card-content">
+                  <mat-card-title>
+                    <mat-icon>person</mat-icon> Profile Completion
+                </mat-card-title>
+               <div class="row">
+                 <div class="col-md" style="color: black;">
+                 <div class="row"><div class="col-md" style="font-size: small; white-space:nowrap;">Personal Info</div>
+                 <div class="col-md"><mat-icon style="color: green;">verified_user</mat-icon></div></div>
+                 <div class="row"><div class="col-md" >Licenses</div><div class="col-md">
+                  <mat-icon style="color: green; margin-left: 20px;">verified_user</mat-icon>
+                 </div></div>
+                 <div class="row"><div class="col-md">Trainings</div><div class="col-md">
+                  <mat-icon style="color: red;  margin-left: 20px;">incomplete_circle</mat-icon>
+                 </div></div>
+                 <div class="row"><div class="col-md">Cuisines</div><div class="col-md">
+                  <mat-icon style="color: red;  margin-left: 20px;">incomplete_circle</mat-icon>
+                 </div></div>
+                </div>
+                <div class="col-md" style="color: black;">
+                  
+                </div>
+               </div>
+               <div class="row" style="color: black; margin-top: 3px;">
+                <div class="col-md btn-card"><button>Complete your Profile</button></div>
+              </div>
+                  </mat-card>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 20px;margin-left: 10px; align-items: center;">
+              <div class="col-md">
+                <mat-card class="card-content" >
+                  <mat-card-title style="font-size: small;">
+                  Operations
+                </mat-card-title>
+                  <div class="row">
+                    <div class="col-md"><img src="../../../assets/media/calendar.png" style="height: 60px;" alt="" srcset=""></div>
+                    <div class="col-md"><img src="../../../assets/media/ratings.jpg" style="height: 60px;" alt="" srcset=""></div>
+                    <div class="col-md"><img src="../../../assets/media/feedback.png" style="height: 60px;" alt="" srcset=""></div>
+                  </div>      
+                  <div class="row row-content">
+                    <div class="col-md"><a href="#">Missed Booking</a></div>
+                    <div class="col-md"><a href="#">Unread review</a></div>
+                    <div class="col-md"><a href="#">FeedBack</a></div>
+                  </div>      
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="card-content" ><mat-card-title style="font-size: small;">
+                  My Tools
+                </mat-card-title>
+                <div class="row">
+                  <div class="col-md"><img src="../../../assets/media/manage.png" style="height: 60px;" alt="" srcset=""></div>
+                  <div class="col-md"><img src="../../../assets/media/calendar.png" style="height: 60px;" alt="" srcset=""></div>
+
+                </div>      
+                <div class="row">
+               <div class="col-md"><a href="#">Manage receipe</a></div>
+               <div class="col-md"><a href="#">Calender</a></div>
+                </div>
+              </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="card-content">
+                  <mat-card-title style="font-size: small;">
+                  Top Menu Item
+                </mat-card-title>
+                <div class="row" style="color: black;">
+                  <div class="col-md"><img src="../../../assets/media/firze.png" style="height: 60px;" alt="" srcset="">French Fries</div>
+                  <div class="col-md"><img src="../../../assets/media/pizza.png" style="height: 60px;" alt="" srcset="">Pizza</div>
+                  <div class="col-md"><img src="../../../assets/media/creal.png" style="height: 60px;" alt="" srcset="">Multigrain Hot Creal</div>
+
+                </div> 
+                  </mat-card>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-md">
+                <mat-card class="card-chart">
+                  <mat-card-title style="font-size: small;">
+                    Reports and Analytics
+                                  </mat-card-title>
+               <div>
+                <app-bar-chart></app-bar-chart>
+               </div>
+                  </mat-card>
+              </div>
+              <div class="col-md">
+                <mat-card class="card-chart">
+                  <mat-card-title >
+                    Ratings
+                                  </mat-card-title>
+                                 <div>
+    <canvas id="myChart" width="400" height="180" ></canvas>
+</div>
+               
+                  </mat-card>
+              </div>
+            </div>
+            <!-- <app-dnutchart></app-dnutchart>  -->
+       
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

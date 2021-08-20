@@ -1,0 +1,122 @@
+mat-sidenav-container{
+    height: 100%;
+    background-color: rgb(253, 253, 253);
+    
+}
+mat-toolbar{
+    background-color: rgb(253, 253, 253);
+    color: rgb(27, 27, 27);
+}
+mat-sidenav {
+    padding: 16px;
+    background-color: rgb(29, 29, 29);
+    width: 200px;
+    mat-icon{
+        margin-right: 5px;
+    }
+}
+mat-nav-list{
+    a{
+        color: white ;
+        :hover{
+            color: orange;
+            
+        }
+    }
+}
+
+mat-expansion-panel{
+    background-color: transparent;
+    box-shadow: none !important;
+    mat-panel-title{
+        font-size: small;
+        color: white;
+    }
+   
+    mat-panel-title:hover{
+        color: orange;
+    }
+}
+mat-nav-list{
+    a{
+        font-size: small;
+        margin-left: 10px;
+    }
+    a:hover {
+        color: orange;
+      }
+   
+}
+.topcards{
+     width: 200px;
+      height: 60;
+       margin-left: 50px;
+         text-align: center;
+        // margin-top: 10px;
+         border-radius: 20px;
+         color: whitesmoke;
+         mat-card-subtitle{
+             color: whitesmoke;
+         }
+       
+}
+.toporg{
+    background-color:orange;
+    background-image: linear-gradient(to right, #FF8C00,#FFA500);
+}
+.topblack{
+    background-color:orange;
+    background-image: linear-gradient(to right, #0e0d0d,#222024);
+}
+.topred{
+    background-color:orange;
+    background-image: linear-gradient(to right, rgb(173, 4, 4),rgb(255, 32, 32));
+}
+.topgreen{
+    background-color:green;
+    background-image: linear-gradient(to right, green,#66ff00);
+}
+.card-content{
+    width: 310px;
+     height: 180px;
+     background-color: rgb(252, 252, 252);
+     margin-right: none;
+     box-shadow: 5px 5px 5px whitesmoke !important;
+     text-align: center;
+     mat-card-title{
+         color: black;
+         font-size:small;         
+     }
+     mat-icon{
+        color: orange;
+          vertical-align:text-bottom;
+     }
+}
+.btn-card{
+    button{
+        border-radius: 50px;
+        background-color: orange;
+        background: orange;
+        border: none;
+    }
+}
+
+//chart
+.card-chart{
+    border-radius: 20px;
+    height: 250px;
+    width: 450px;
+    margin-bottom: 20px ;
+    margin-left: 20px;
+    background: white;
+    mat-card-title{
+        text-align: center;
+        color: black;
+        font-size: medium;
+    }
+}
+
+        a{
+            text-decoration: none;
+            color: darkorange;
+        }
